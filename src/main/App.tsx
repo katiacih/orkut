@@ -6,10 +6,8 @@ const App: React.FC = () => {
   return (
     <div>
       <Menu />
-      {/* <Home/> */}
     </div>
   )
   
 };
-
 export default App;
