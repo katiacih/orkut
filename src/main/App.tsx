@@ -1,5 +1,4 @@
 import React from 'react';
-import Home from '../presentation/pages/home/home';
 import Menu from './menu/menu';
 
 const App: React.FC = () => {
@@ -11,3 +10,4 @@ const App: React.FC = () => {
   
 };
 export default App;
+

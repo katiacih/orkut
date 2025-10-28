@@ -32,6 +32,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [React](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [React Router]()
+- [React Bootstrap](https://react-bootstrap.github.io/docs/getting-started/introduction)
 
 ### 👾 Pré-requisitos
 
