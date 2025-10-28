@@ -60,3 +60,9 @@ export const UserText = styled.span`
  color: ${colors.dark10};
  font-family: "Inter", sans-serif;
 `
+
+export const CustomToggle = styled.span`
+ :after {
+  content: ' \00A7';
+ }
+`

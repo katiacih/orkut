@@ -1,9 +1,11 @@
 
 
-import React from 'react'
-import { Avatar, List, ListItem, Logo, NavbarCustom, StyledLink, UserText } from './navbar.styles';
+import React, { forwardRef } from 'react'
+import { Avatar, CustomToggle, List, ListItem, Logo, NavbarCustom, StyledLink, UserText } from './navbar.styles';
 import { Button, ButtonGroup, Col, Container, Dropdown, DropdownButton, Form, Row } from 'react-bootstrap';
 import { colors, surfaces, typhografy } from '../styles/colors';
+
+
 
 function Navbar() {
   return (
@@ -32,13 +34,9 @@ function Navbar() {
         <Dropdown as={ButtonGroup} style={{ alignItems: 'center'}}>
         <Avatar>KC</Avatar>
         <UserText>Katia Cih</UserText>
-
         <Dropdown.Toggle split variant="success" id="dropdown-split-basic" style={{ color: colors.brandColor, backgroundColor: 'transparent', border: 'none' }} />
-
         <Dropdown.Menu >
           <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
       </Col>
