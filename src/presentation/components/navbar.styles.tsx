@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { colors, surfaces, typhografy } from '../styles/colors'
+import { colors, surfaces, typhografy } from '../styles/global'
 import {  Link } from 'react-router-dom'
 import { Form } from 'react-bootstrap'
 
@@ -56,7 +56,7 @@ export const Avatar = styled.div`
 `
 
 export const UserText = styled.span`
- font-size: 12px;
+ font-size: 14px;
  color: ${colors.dark10};
  font-family: "Inter", sans-serif;
 `

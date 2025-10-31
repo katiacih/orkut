@@ -1,9 +1,11 @@
 
 
-import React, { forwardRef } from 'react'
-import { Avatar, CustomToggle, List, ListItem, Logo, NavbarCustom, StyledLink, UserText } from './navbar.styles';
-import { Button, ButtonGroup, Col, Container, Dropdown, DropdownButton, Form, Row } from 'react-bootstrap';
-import { colors, surfaces, typhografy } from '../styles/colors';
+import React from 'react';
+import { List, ListItem, Logo, NavbarCustom, StyledLink, UserText } from './navbar.styles';
+import { ButtonGroup, Col, Container, Dropdown,Form, Row } from 'react-bootstrap';
+import { colors, surfaces, typhografy } from '../styles/global';
+import AvatarComponent from './avatar';
+import Icon from '../resources/icon.resources';
 
 
 
@@ -32,9 +34,12 @@ function Navbar() {
       </Col>
       <Col>
         <Dropdown as={ButtonGroup} style={{ alignItems: 'center'}}>
-        <Avatar>KC</Avatar>
-        <UserText>Katia Cih</UserText>
-        <Dropdown.Toggle split variant="success" id="dropdown-split-basic" style={{ color: colors.brandColor, backgroundColor: 'transparent', border: 'none' }} />
+        <AvatarComponent><img src="../resources/dwightshrute.jpeg"/></AvatarComponent>
+        <UserText>Denin JJ</UserText>
+        {/* <Dropdown.Toggle split variant="success" id="dropdown-split-basic" style={{ color: colors.brandColor, backgroundColor: 'transparent', border: 'none' }} /> */}
+        <Dropdown.Toggle split id="dropdown-split-basic" style={{ backgroundColor: 'transparent', border: 'none' }} >
+          <Icon variant='chevron-down' color='primary' size='sm'/>
+        </Dropdown.Toggle>
         <Dropdown.Menu >
           <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
         </Dropdown.Menu>
