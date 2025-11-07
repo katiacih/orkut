@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import {  FaFile } from "react-icons/fa";
+import styled from '@emotion/styled'
+import { colors } from '../../styles/global';
 
 export const Container = styled.div`
   display: flex;
@@ -8,41 +7,27 @@ export const Container = styled.div`
   justify-content: space-between;
   min-height: 100vh;
   position: relative;
+  
 `;
 
-export const HeaderLandingPageContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 48px 16px 12px 16px;
-  margin-bottom: 144px;
+export const ContentsGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: px;
+  background-color: ${colors.dark30};
+  padding: 16px 100px 0px 100px;
+`
 
-`;
+export const ContentGridOne = styled.div`
+  grid-area: 1 / 1 / 2 / 2;
+`
 
-export const HeaderLandingPageTitle = styled.div`
-  position: relative;
-  width: 100%;
-`;
-
-
-export const TitleLanding = styled.span`
-  font-family: 'Bebas Neue', cursive;
-  font-size: 2em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background-image: linear-gradient(#cce7fd, #cce7fd);
-  background-size: 100% 10px;
-  background-repeat: no-repeat;
-  background-position: 100% 0%;
-  transition: background-size .7s, background-position .5s ease-in-out;
-
-   &:hover { 
-    background-size: 100% 100%;
-    background-position: 0% 100%;
-    transition: background-position .7s, background-size .5s ease-in-out;
-  }
-`;
+export const ContentGridTwo = styled.div`
+  grid-area: 1 / 2 / 2 / 3;
+`
+export const ContentGridThree = styled.div`
+  grid-area: 1 / 3 / 2 / 4;
+`
+  

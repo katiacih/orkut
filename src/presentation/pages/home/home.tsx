@@ -1,16 +1,16 @@
 import React from 'react'
 import Menu from '../../../main/menu/menu'
-import LandingContent from './landing-content'
+import Contents from './contents'
 import Navbar from '../../components/navbar'
+import CardProfile from '../../components/card-profile'
 
 function Home() {
   return (
     <div>
       <Navbar />
-      <LandingContent title='teste' isShowBreacrumbs={false}>
-        <Menu />
-      </LandingContent>
-
+      <Contents />
+      <CardProfile />
+      <Menu />
     </div>    
   )
 }
